@@ -5,6 +5,8 @@ import lombok.ToString;
 import wang.l1n.jpademo.entity.common.BaseEntity;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Data
@@ -29,6 +31,5 @@ public class Customer extends BaseEntity {
 
   @Column(name = "address")
   private String address;
-
 
 }
