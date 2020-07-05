@@ -23,9 +23,23 @@ public class AddTest {
     @Test
     public void test01(){
         Customer customer = new Customer();
-        customer.setName("jack");
-        customer.setAddress("江苏南京");
-        customer.setLevel("9");
+        customer.setName("王五");
+        customer.setAddress("江苏镇江");
+        customer.setLevel("4");
+        customer.setIndustry("EE");
+        customer.setPhone("13914545748");
+        customer.setDelete(Boolean.FALSE);
+        customer.setAvailable(Boolean.TRUE);
+        customerRepository.save(customer);
+    }
+
+    @Test
+    public void test02() {
+        Customer customer = new Customer();
+        customer.setId("297ea23e73195dfe0173195e019b0000");
+        customer.setName("test");
+        customer.setAddress("江苏淮安");
+        customer.setLevel("10");
         customer.setDelete(Boolean.FALSE);
         customer.setAvailable(Boolean.TRUE);
         customerRepository.save(customer);

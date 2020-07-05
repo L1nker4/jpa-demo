@@ -1,13 +1,16 @@
 package wang.l1n.jpademo.entity;
 
 import lombok.Data;
+import lombok.ToString;
+import wang.l1n.jpademo.entity.common.BaseEntity;
 
 import javax.persistence.*;
 
 @Entity
 @Data
 @Table(name = "tb_customer")
-public class Customer extends BaseEntity{
+@ToString(callSuper = true)
+public class Customer extends BaseEntity {
 
   @Column(name = "name")
   private String name;

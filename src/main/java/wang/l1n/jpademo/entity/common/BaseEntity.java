@@ -1,4 +1,4 @@
-package wang.l1n.jpademo.entity;
+package wang.l1n.jpademo.entity.common;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
